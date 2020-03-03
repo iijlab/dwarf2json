@@ -172,7 +172,7 @@ type vtypeEnum struct {
 
 type vtypeSymbol struct {
 	SymbolType   map[string]interface{} `json:"type,omitempty"`
-	Address      uint64                 `json:"address"`
+	Address      uint64                 `json:"address,string"`
 	ConstantData []byte                 `json:"constant_data,omitempty"`
 }
 
